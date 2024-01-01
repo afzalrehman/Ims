@@ -1,0 +1,183 @@
+<?php
+// Add Database Connection Page
+require_once 'config.php';
+
+// Start Session
+// session_start();
+
+if(isset($_POST['submit'])){
+
+    $user_name = $_POST['user-name'];
+    $user_phonenumber = $_POST['user-phonenumber'];
+    $user_password = $_POST['user-password'];
+    $user_role = $_POST['user-role'];
+
+    // Validate form data
+    $errors = array();
+    if(empty($user_name)) {
+        $errors['user_name'] = 'مہربانی کرکے نام لکھئیے';
+    }
+    if(empty($user_phonenumber)) {
+        $errors['user_phonenumber'] = 'مہربانی کرکے فون نمبر لکھئیے';
+    }
+    if(empty($user_password)) {
+        $errors['user_password'] = 'مہربانی کرکے پاس ورڈ لکھئیے';
+    }
+    if(empty($user_role)) {
+        $errors['user_role'] = 'مہربانی کرکے عہدہ سیلکٹ کریں';
+    }
+
+    // If there are no errors, proceed with user registration
+    if(empty($errors)) {
+        // User Check Query If User Is Already Exits
+        $user_phonenumber_check_sql = "SELECT * FROM _users WHERE user_phone_number='$user_phonenumber'";
+
+        // Execute the SQL statement
+        $user_phonenumber_check_result = mysqli_query($conn, $user_phonenumber_check_sql);
+
+        if (mysqli_num_rows($user_phonenumber_check_result) > 0){
+
+            $errors['user_phonenumber_exits'] = 'یہ فون نمبر پیلے سے موجود ہیں';
+
+            // Redirect to login page
+            // header('Location: user-details.php');
+            // exit;
+        }
+        else 
+        {
+            // TODO: Insert user data into database
+            $sql = "INSERT INTO _users (user_name, user_phone_number, user_password, user_role) VALUES 
+                    ('$user_name','$user_phonenumber','$user_password','$user_role')";
+            if ($conn->query($sql) === TRUE) {
+
+                echo `<script>alert("User Created Successfully")</script>`;
+
+                // Redirect to login page
+                header('Location: user-details.php');
+                // exit;
+            } 
+            else {
+                echo `<script>alert("Error")</script>`;
+            }
+        }
+          
+          // Close database connection
+          $conn->close();
+    }
+}
+
+
+
+
+?>
+
+<?php require_once 'header.php'; ?>
+
+<!-- ===== Content wrapper (START) ===== -->
+<div class="content-wrapper">
+    <!-- ===== Content (START) ===== -->
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="fw-semibold py-3 mb-4 urdu-board"><span class="text-muted fw-light urdu-board">یوسَر /</span> ایڈ
+            کریں</h4>
+        <div class="row mb-5">
+            <!-- FormValidation -->
+            <div class="col-12">
+                <div class="card">
+                    <h5 class="card-header fw-semibold urdu-board">یوسَر کو ایڈ کریں ۔</h5>
+                    <div class="card-body">
+
+                        <form id="user-form" method="post" class="row g-3">
+
+                            <!-- Account Details -->
+                            <div class="col-12">
+                                <!-- <h6 class="fw-semibold">1. Account Details</h6> -->
+                                <hr class="mt-0" />
+                            </div>
+                            
+                            <div class="col-md-6 mb-2">
+                                <label class="urdu-label" for="user-name">نام</label>
+                                <input type="text" id="user-name" name="user-name"
+                                    class="form-control fw-semibold urdu-label" placeholder="قاری عبداللہ صاحب" />
+                                <?php if(isset($errors['user_name'])) { echo '<span class="error">' . $errors['user_name'] . '</span>'; } ?>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label class="urdu-label" for="user-phonenumber">فون نمبر</label>
+                                <input type="number" id="user-phonenumber" name="user-phonenumber"
+                                    class="form-control fw-semibold" dir="ltr" style="text-align: end;"
+                                    placeholder="03452811522" />
+                                <?php if(isset($errors['user_phonenumber'])) { echo '<span class="error">' . $errors['user_phonenumber'] . '</span>'; } ?>
+                                <?php if(isset($errors['user_phonenumber_exits'])) { echo '<span class="error">' . $errors['user_phonenumber_exits'] . '</span>'; } ?>
+                            </div>
+
+                            <div class="col-md-6 mb-2">
+                                <label class="urdu-label" for="user-password">پاس ورڈ</label>
+                                <input type="text" id="user-password" name="user-password"
+                                    class="form-control fw-semibold" placeholder="NoorulAhad@123" />
+                                <?php if(isset($errors['user_password'])) { echo '<span class="error">' . $errors['user_password'] . '</span>'; } ?>
+                            </div>
+
+                            <div class="col-md-6 mb-2">
+                                <label class="urdu-label" for="user-role">عہدہ</label>
+                                <select name="user-role" id="user-role" class="form-control fw-semibold urdu-label">
+                                    <option value="" class="urdu-label">- - -</option>
+                                    <option value="استاد" class="urdu-label">استاد</option>
+                                    <option value="ناظم تعلیمات" class="urdu-label">ناظم تعلیمات</option>
+                                    <option value="ناظم" class="urdu-label">ناظم</option>
+                                    <option value="مدیر" class="urdu-label">مدیر</option>
+                                </select>
+                                <?php if(isset($errors['user_role'])) { echo '<span class="error">' . $errors['user_role'] . '</span>'; } ?>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <button type="submit" id="submit" name="submit" class="btn btn-primary urdu-btn">ایڈ
+                                    کریں</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /FormValidation -->
+        </div>
+    </div>
+</div>
+
+<script>
+    const button = document.getElementById('submit');
+const toasts = document.getElementById('toasts');
+
+const messages = [
+    'Message One',
+    'Message Two',
+    'Message Three',
+    'Message Four',
+];
+
+const types = ['info', 'success', 'error'];
+
+button.addEventListener('click', () => createNotification());
+
+function createNotification(message = null, type = null) {
+    const notif = document.createElement('div');
+    notif.classList.add('toast');
+    notif.classList.add(type ? type : getRandomType());
+
+    notif.innerText = message ? message : getRandomMessage();
+
+    toasts.appendChild(notif);
+
+    setTimeout(() => {
+        notif.remove();
+    }, 3000);
+}
+
+function getRandomMessage() {
+    return messages[Math.floor(Math.random() * messages.length)];
+}
+
+function getRandomType() {
+    return types[Math.floor(Math.random() * types.length)];
+}
+</script>
+<!-- ===== Content (END) ===== -->
+<script src="assets/vendor/libs/toastr/toastr.js"></script>
+<?php require_once 'footer.php'; ?>

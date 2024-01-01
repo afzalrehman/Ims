@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Jameel-Kasheeda";
+    src: url(../vendor/fonts/urdu/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttf);
+}
+
+@font-face {
+    font-family: "Jameel-Regular";
+    src: url(../vendor/fonts/urdu/Jameel\ Noori\ Nastaleeq\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../vendor/fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Alvi";
+    src: url(../vendor/fonts/urdu/Alvi\ Nastaleeq\ Regular.ttf);
+}
+
+
+body {
+    font-family: "Jameel-Kasheeda" !important;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh !important;
+    margin: -20px 0 50px;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.school-name{
+    margin-bottom: 10px;
+    font-size:50px;
+    letter-spacing:1px;
+    font-weight: bolder;
+}
+
+.school-description{
+    margin-top:-15px;
+    font-size:20px;
+    letter-spacing:1px;
+    font-weight: 500;
+    font-family: "Jameel-Kasheeda";
+}
+
+.forgot {
+    font-family: "Alvi" !important;
+    letter-spacing: 1px; 
+    text-decoration: none; 
+    font-size:18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    /* margin: 15px 0; */
+}
+
+
+button {
+    font-family: "Alvi" !important;
+    border-radius: 40px;
+    border: 1px solid #6673FC;
+    background-color: #6673FC;
+    /* background: -webkit-linear-gradient(to right, #6673FC, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #6673FC); */
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 4px 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover
+{
+    background-color: #131fa5;
+    border: 1px solid #131fa5;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    direction: ltr;
+    font-family: "Alvi" !important;
+    border-radius: 20px;
+    background-color: #eee;
+    border: none;
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: 8px 0;
+    width: 100%;
+}
+input:focus {
+   outline: 1px solid #6673fc77;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+
+.overlay-container {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay {
+    background: #6673FC;
+    background: -webkit-linear-gradient(to right, #6673FC, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #6673FC);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.sign_up
+{
+    font-family: "Jameel-Kasheeda";
+    word-spacing: 3px;
+    font-size: 20px;
+    letter-spacing:1px;
+    font-weight: 500;
+}
+
+#signup
+{
+    font-family: "Alvi" !important;
+    border-radius: 40px !important;
+    border: 1px solid #6673FC !important;
+    background-color: #6673FC !important;
+    color: #FFFFFF !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    padding: 4px 30px !important;
+    word-spacing: 3px !important;
+    /* text-transform: uppercase; */
+    transition: transform 80ms ease-in !important;
+}
+/* 
+.error-msg
+{
+    background-color: rgba(247, 8, 8, 0.61);
+    color:white;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-size: 16px;
+} */
+
+.sign-in
+{
+    margin-bottom: 30px;
+    font-size:45px;
+}
+
+.mobile-name
+{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    body
+    {
+        /* background: #6673FC; */
+        /* background: -webkit-linear-gradient(to right, #6673FC, #41ad33); */
+        /*---------------------------- My Own Background Color ------------------------------ */
+        /* background: linear-gradient(to bottom, #08a34e, #6673FC); */
+    }
+
+    /* For mobile phones: */
+    .overlay-container
+    {
+        display: none;
+    }
+
+    .sign-in-container {
+        /* background: linear-gradient(to bottom, #08a34e, #6673FC); */
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .container {
+        /* background: linear-gradient(to bottom, #08a34e, #6673FC); */
+
+        margin-top: -40px;
+        border-radius: 20px;
+        width: 720px;
+        max-width: 90%;
+        min-height: 480px;
+    }
+
+    .sign-in
+    {
+        position: relative;
+        margin-top: 90px;
+        margin-bottom: 20px;
+        font-size:35px;
+        /* top: 70px; */
+    }
+
+    .mobile-name
+    {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 10px;
+        padding-bottom: 10px;
+        color: rgb(24, 24, 119);
+        margin-bottom: 10px; 
+        border-bottom: 2px solid black;
+        font-size:45px; 
+        letter-spacing:1px;
+        font-weight: bolder;
+    }
+
+    input {
+        font-size: 16px;
+        font-weight: bold;
+        /* padding-bottom: 5px; */
+        padding: 8px 15px;
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    .forgot {
+        font-family: "Alvi" !important;
+        letter-spacing: 1px; 
+        text-decoration: none; 
+        font-size:16px;
+        font-weight: bold;
+        color: black;
+        margin-top: 30px;
+        /* margin: 15px 0; */
+    }
+}
+
+@media only screen and (max-width: 300px) 
+{
+    /* For mobile phones: */
+    .overlay-container
+    {
+        display: none;
+    }
+
+    .container h1
+    {
+        font-size: 26px;
+    }
+
+    .sign-in-container {
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .container {
+        border-radius: 20px;
+        width: 720px;
+        max-width: 90%;
+        min-height: 480px;
+    }
+
+    .container button 
+    {
+        padding: 2px 10px;
+        font-size: 12px;
+
+    }
+
+    .container input, a
+    {
+        font-size: 14px;
+    }
+}
+
+#multiuser {
+    appearance: none;
+    font-family: "Alvi" !important;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    background-color: #eee;
+    border: none;
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 20px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+option {
+    border-radius: 20px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+}
+
+/* .error-msg {
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+    left: 28%;
+    background-color: rgba(247, 8, 8, 0.61);
+    color: white;
+    padding: 2px 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-size: 16px;
+} */
+
+@media only screen and (max-width: 768px) {
+    .error-msg {
+        /* margin-top:10%; */
+        position: absolute;
+        z-index: 999;
+        top: 26%;
+        left: 23%;
+        background-color: rgba(247, 8, 8, 0.61);
+        color: white;
+        padding: 3px 12px;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,414 @@
+@font-face {
+    font-family: "Jameel-Kasheeda";
+    src: url(../../fonts/urdu/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttf);
+}
+
+@font-face {
+    font-family: "Jameel-Regular";
+    src: url(../../fonts/urdu/Jameel\ Noori\ Nastaleeq\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../../fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Alvi";
+    src: url(../../fonts/urdu/Alvi\ Nastaleeq\ Regular.ttf);
+}
+
+
+
+
+
+.urdu-logo {
+    font-family: "Jameel-Kasheeda";
+}
+
+/* Cursor Pointer */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.annoucment_title {
+    font-family: "Jameel-Kasheeda";
+}
+
+.annoucment_discription {
+    font-family: "Jameel-Kasheeda";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Urdu Font Apply Sidebar */
+
+.urdu-menu {
+    font-family: "Jameel-Kasheeda";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.urdu-submenu {
+    font-family: "Jameel-Kasheeda";
+    font-size: 16px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.ur-submenu {
+    font-size: 19px;
+}
+
+.urdu-menu-category {
+    font-family: "Jameel-Kasheeda";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#islamic_date {
+    font-family: "Jameel-Kasheeda";
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+#islamic_month {
+    font-family: "Jameel-Kasheeda";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#english_date {
+    font-family: "Jameel-Kasheeda";
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+#english_month {
+    font-family: "Jameel-Kasheeda";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.urdu_card {
+    font-family: "Jameel-Kasheeda";
+    font-weight: bold;
+    font-size: 22px;
+    word-spacing: 0.2em;
+}
+
+.inter_number {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.inter {
+    font-family: "Inter";
+}
+
+.inter_number_small {
+    font-family: "Inter";
+    font-size: 12px;
+}
+
+
+.inter_card {
+    font-family: "Inter";
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.inter_card_price {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* ----------------------------------------------------------------------------------------------*/
+
+.employeeList {
+    height: 400px;
+    overflow: auto;
+}
+
+/* Set the width and height of the scrollbar */
+.employeeList::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* Track */
+.employeeList::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Handle */
+.employeeList::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.employeeList::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/* =========================month-atendes======== */
+
+.check-scroll {
+    width: 400px;
+    /* Adjust this value as needed */
+    overflow-x: auto;
+}
+
+#month-attendence::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* Track */
+#month-attendence::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Handle */
+#month-attendence::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+#month-attendence::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------*/
+
+.transactions {
+    height: 400px;
+    overflow: auto;
+}
+
+/* Set the width and height of the scrollbar */
+.transactions::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* Track */
+.transactions::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Handle */
+.transactions::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.transactions::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/* ----------------------------------------------------------------------------------------------*/
+
+.employeeList2 {
+    height: 400px;
+    overflow: auto;
+}
+
+/* Set the width and height of the scrollbar */
+.employeeList2::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+
+/* Track */
+.employeeList2::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Handle */
+.employeeList2::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.employeeList2::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+.urdu-space {
+    word-spacing: 5px !important;
+}
+
+.elaan{
+    color: blue !important;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.urdu-board {
+    font-family: "Jameel-Kasheeda";
+    font-size: 26px;
+    word-spacing: 0.1em;
+}
+
+.urdu-label {
+    font-family: "Jameel-Kasheeda";
+    font-size: 18px;
+    word-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-list:hover {
+    background-color: #e7e7ffd0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.urdu-select {
+    font-family: "Jameel-Kasheeda";
+    font-size: 16px;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------- */
+
+.urdu-btn {
+    font-family: "Alvi" !important;
+    font-weight: 600 !important;
+    word-spacing: 2px;
+    font-size: 16px !important;
+}
+
+/* ------------------------ User Details ---------------------------------- */
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.urdu-select-option {
+    font-weight: 600 !important;
+}
+
+/* ------------------------ user-details.php ---------------------------------- */
+#filter_user_phonenumber::placeholder {
+    font-family: "Jameel-Kasheeda" !important;
+}
+
+/* ------------------------ Student-details.html ---------------------------------- */
+
+#reg-number::placeholder {
+    font-family: "Jameel-Kasheeda" !important;
+}
+
+#matloba-darjah::placeholder {
+    font-family: "Jameel-Kasheeda" !important;
+}
+
+/* ------------------------ Student-details.php ---------------------------------- */
+#modal-data-list {
+    height: 400px !important;
+    overflow: auto !important;
+}
+
+/* Set the width and height of the scrollbar */
+#modal-data-list::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+}
+
+/* Track */
+#modal-data-list::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Handle */
+#modal-data-list::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+#modal-data-list::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/* --------------------------------------- Income ------------------ */
+
+#modal-data-list-income {
+    height: 400px !important;
+    overflow: auto !important;
+}
+
+/* Set the width and height of the scrollbar */
+#modal-data-list-income::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+}
+
+/* Track */
+#modal-data-list-income::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Handle */
+#modal-data-list-income::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+#modal-data-list-income::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+/* ===========profile/fess/raqam========= */
+.raqam {
+    background-color: #E8FADF;
+    color: #9CE874;
+    padding: 1px 10px;
+    border-radius: 8px;
+}
+
+.raqam-No {
+    background-color: #FFE0DB;
+    color: #FF6950;
+}
+
+/* ===================word-space=========== */
+.word-space{
+    word-spacing: 8px;
+}
+

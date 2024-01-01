@@ -1,0 +1,214 @@
+@font-face {
+    font-family: Urdu;
+    src: url(../../fonts/urdu/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../../fonts/inter/Inter-Regular.ttf);
+}
+
+/* ====== Global CSS ====== */
+
+:root {
+    --success: #71dd37;
+    --success-bg: #e8fadf;
+    --info: #03c3ec;
+    --info-bg: #e7e7ff;
+    --warning: #ffab00;
+    --warning-bg: #fff2d6;
+    --danger: #ff3e1d;
+    --danger-bg: #ffe0db;
+    --primary: #696cff;
+    --primary-bg: #e7e7ff;
+
+}
+
+
+body {
+    font-family: Urdu !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+}
+
+h2 {
+    font-family: Inter;
+    /* font-size:20px !important; */
+}
+
+a, p, span {
+    word-spacing: 1px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.eng-font {
+    font-family: Inter;
+}
+
+.urdu-input {
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+    font-weight: bold;
+}
+
+.urdu-label {
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+}
+
+
+/* =================
+Dashboard
+================== */
+.view-more-btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    /* font-size: 18px; */
+}
+
+.card-icon-bg .calendar-icon {
+    width: 50px;
+}
+
+.date-text {
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: bold;
+    /* padding-bottom:; */
+}
+
+/* Second Row */
+.user-row .card-text {
+    font-size: 25px;
+}
+
+.user-row .card-info .card-title {
+    font-size: 25px;
+    font-family: Inter;
+
+}
+
+
+/* Third Row */
+.income-row .card-title {
+    font-size: 25px;
+}
+
+.income-row .dropdown .btn {
+    font-size: 15px;
+    font-family: Inter;
+}
+
+.income-row .dropdown .dropdown-item {
+    font-weight: bold;
+}
+
+/* Fourth Row */
+.fees-tab .tab-content .tab-pane th {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.fees-tab .tab-content .tab-pane .table tbody td {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.fees-tab .tab-content .tab-pane tbody tr td:nth-child(1) {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.fees-tab .tab-content .tab-pane tbody tr td:nth-child(3) {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.nav-pills .nav-item .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown .dropdown-item {
+    font-weight: bold;
+}
+
+/* Fifth Row */
+.shop-row .card-title {
+    font-size: 25px;
+}
+
+.shop-row .dropdown .btn {
+    font-size: 15px;
+    font-family: Inter;
+}
+
+.shop-row .dropdown .dropdown-item {
+    font-weight: bold;
+}
+
+/* =================
+Calender
+================== */
+
+/* =================
+Admission Form
+================== */
+.adm-form .form-label {
+    /* font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px; */
+}
+
+.adm-form .input-text {
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+.form-check .form-check-label {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.valid-feedback {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.invalid-feedback {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* ----- Madarse ke malumaat ----- */
+
+.form-select option{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* ===============
+Footer
+================== */
+
+.content-footer .footer-link {
+    font-family: Inter;
+    font-size: 13px;
+}
+
+.content-footer .copyright-content {
+    font-family: Inter;
+    font-size: 13px;
+}
