@@ -60,6 +60,30 @@
   <script src="assets/vendor/js/template-customizer.js"></script>
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
   <script src="assets/js/config.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      } 
+       
+    </script>
 </head>
 
 <body>
@@ -107,17 +131,17 @@
             </a>
 
             <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="All_institue.html" class="menu-link">
-                      <div data-i18n="All Institute">All Institute</div>
-                    </a>
-                  </li>
+              <li class="menu-item">
+                <a href="All_institue.html" class="menu-link">
+                  <div data-i18n="All Institute">All Institute</div>
+                </a>
+              </li>
               <li class="menu-item">
                 <a href="institute-add.html" class="menu-link">
                   <div data-i18n="Institute Add">Institute Add</div>
                 </a>
               </li>
-             
+
             </ul>
           </li>
 
@@ -726,69 +750,213 @@
 
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
                 <div class="card">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <img src="assets/img/pic/institute1.png" alt="" class="avatar avatar-xl me-2 rounded">
-                      <div class="card-info">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/institute1.png" alt="" class="avatar avatar-xl me-2 ">
+                      <div class="card-info mt-2">
                         <p class="card-text mb-0 pb-2 fw-bold">Total Institute</p>
                         <div class="d-flex align-items-end ">
-                          <h4 class="card-title text-primary  me-2 ">22</h4>
+                          <h4 class="card-title text-primary ">22</h4>
                         </div>
                       </div>
                     </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
                 <div class="card">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <img src="assets/img/pic/course1.jpeg" alt="" class="avatar avatar-xl me-2 rounded">
-                      <div class="card-info">
-                        <p class="card-text mb-0 pb-2 fw-bold">Total Courses</p>
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/course1.jpeg" alt="" class="avatar avatar-xl me-2 ">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Total Trade</p>
                         <div class="d-flex align-items-end ">
-                          <h4 class="card-title text-primary  me-2 ">97</h4>
+                          <h4 class="card-title text-primary ">22</h4>
                         </div>
                       </div>
                     </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
                 <div class="card">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <img src="assets/img/pic/teacher1.webp" alt="" class="avatar avatar-xl me-2 rounded">
-                      <div class="card-info">
-                        <p class="card-text mb-0 fw-bold pb-2">Total Teacher</p>
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/teacher1.webp" alt="" class="avatar avatar-xl me-2 ">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Total Teacher</p>
                         <div class="d-flex align-items-end ">
-                          <h4 class="card-title text-primary  me-2 ">187</h4>
+                          <h4 class="card-title text-primary ">22</h4>
                         </div>
                       </div>
                     </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
                 <div class="card">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <img src="assets/img/pic/student1.png" alt="" class="avatar avatar-xl me-2 rounded">
-                      <div class="card-info">
-                        <p class="card-text mb-0 fw-bold pb-2">Total Student</p>
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/students.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Total Students</p>
                         <div class="d-flex align-items-end ">
-                          <h4 class="card-title text-primary  me-2 ">3187</h4>
+                          <h4 class="card-title text-primary ">22</h4>
                         </div>
                       </div>
                     </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/mail.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Male</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/femail.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Female</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i> -14.82%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/Scholarships.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Scholarships</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/Fee Collected.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Fee Collected</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i> -14.82%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/Paid Fee.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Paid Fee</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-success  fw-semibold"><i class='bx bx-up-arrow-alt'></i> +28.42%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/Unpaid Fee.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Unpaid Fee</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i> -14.82%</small>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/Total Staf.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Total Staf</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i> -14.82%</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between ">
+                      <img src="assets/img/pic/Total Applicatiuons.png" alt="" class="avatar avatar-xl">
+                      <div class="card-info mt-2">
+                        <p class="card-text mb-0 pb-2 fw-bold">Applicatiuons</p>
+                        <div class="d-flex align-items-end ">
+                          <h4 class="card-title text-primary ">22</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <small class="text-danger fw-semibold"><i class='bx bx-down-arrow-alt'></i> -14.82%</small>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
             <div class="row">
               <!-- Order Statistics -->
+              <div class="col-lg-6">
+                <div class="card rounded">
+                    <div class="card-body">
+                        <!-- Chart container -->
+                        <div id="piechart_3d" style="height: 400px; width: 100%;" ></div>
+                    </div>
+                </div>
+            </div>
               <div class="col-md-6 col-lg-6 col-xl-6 order-0 mb-4">
                 <div class="card card-higth">
                   <div class="card-body ">
@@ -1027,6 +1195,7 @@
 
   <!-- Page JS -->
   <script src="assets/js/dashboards-analytics.js"></script>
+
 
 </body>
 
