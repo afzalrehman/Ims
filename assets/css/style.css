@@ -102,6 +102,9 @@
     color: rgb(0, 0, 0);
     border: 1px solid #5F61E6;
     outline: none;
-    margin-right: 50px;
     border-radius: 8px;
+}
+
+.btn_search{
+    margin-right: 20px;
 }
