@@ -777,208 +777,129 @@
 
                     <!-- Content -->
 
+
                     <div class="container-xxl flex-grow-1 container-p-y">
+
                         <div class="row">
-                            <div class="col-xl-12">
+                            <div class="col-md-12">
+
                                 <div class="card mb-4">
-                                    <div class="card-header  d-flex justify-content-between align-items-center">
-                                        <div class="col-lg-12">
-                                            <h3 class="mb-0 mb-3">New Institute Form</h3>
+                                    <h3 class="card-header">Add Course</h3>
+                                    <!-- Account -->
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start align-items-sm-center gap-4">
+                                            <img src="assets/img/pic/profile pic.webp" alt="user-avatar"
+                                                class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
+                                            <div class="button-wrapper">
+                                                <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                                                    <span class="d-none d-sm-block">Upload Image</span>
+                                                    <i class="bx bx-upload d-block d-sm-none"></i>
+                                                    <input type="file" id="upload" class="account-file-input" hidden
+                                                        accept="image/png, image/jpeg" />
+                                                </label>
+                                                <button type="button"
+                                                    class="btn btn-label-secondary account-image-reset mb-4">
+                                                    <i class="bx bx-reset d-block d-sm-none"></i>
+                                                    <span class="d-none d-sm-block">Reset</span>
+                                                </button>
+
+                                                <p class="text-muted mb-0">Upload Image</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Institute ID </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text"><i
-                                                                    class="fa-regular fa-id-badge"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Institute ID" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Institute Name </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text"><i
-                                                                    class="fa-solid fa-school"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Institute Name" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-company">Institute Address</label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-company2"
-                                                                class="input-group-text"><i
-                                                                    class="fa-solid fa-location-dot"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Institute Address." />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-company">Establish Date</label>
-                                                        <div class="input-group input-group-merge">
-
-                                                            <input type="date" class="form-control"
-                                                                placeholder="Establish  Date" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label" for="basic-icon-default-phone">Phone
-                                                            No</label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-phone2"
-                                                                class="input-group-text"><i
-                                                                    class="bx bx-phone"></i></span>
-                                                            <input type="number" class="form-control phone-mask"
-                                                                placeholder="+923587998941" />
-                                                        </div>
-                                                    </div>
-
+                                    <hr class="my-0">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="card mb-4">
+                                                <div
+                                                    class="card-header  d-flex justify-content-between align-items-center">
 
                                                 </div>
-                                                <div class="col-lg-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Institute Code </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text"><i
-                                                                    class="fa-solid fa-code"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Institute Code" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Institute City </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text"><i
-                                                                    class="fa-solid fa-city"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Institute City" />
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label"
+                                                                        for="basic-icon-default-fullname">Institute
+                                                                        Name </label>
+                                                                    <div class="input-group input-group-merge">
+                                                                        <span id="basic-icon-default-fullname2"
+                                                                            class="input-group-text"></span>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Institute Name" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label class="form-label"
+                                                                        for="basic-icon-default-fullname">Course
+                                                                        Type </label>
+                                                                    <div class="input-group input-group-merge">
+                                                                        <span id="basic-icon-default-fullname2"
+                                                                            class="input-group-text"></span>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Course Type" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label class="form-label"
+                                                                        for="basic-icon-default-phone">Course
+                                                                         Duration</label>
+                                                                    <div class="input-group input-group-merge">
+                                                                        <span id="basic-icon-default-phone2"
+                                                                            class="input-group-text"></span>
+                                                                        <input type="text"
+                                                                            class="form-control phone-mask"
+                                                                            placeholder="Course Duration" />
+                                                                    </div>
+                                                                </div>
 
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-company">region</label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-company2"
-                                                                class="input-group-text"><i
-                                                                    class="fa-solid fa-chart-area"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Region" />
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="mb-3">
+                                                                    <label class="form-label"
+                                                                        for="basic-icon-default-fullname">Course
+                                                                        Name </label>
+                                                                    <div class="input-group input-group-merge">
+                                                                        <span id="basic-icon-default-fullname2"
+                                                                            class="input-group-text"></span>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Course Name" />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label"
+                                                                        for="basic-icon-default-fullname">Course
+                                                                        Stream </label>
+                                                                    <div class="input-group input-group-merge">
+                                                                        <span id="basic-icon-default-fullname2"
+                                                                            class="input-group-text"></span>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Course Stream" />
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Submit</button>
+                                                            </div>
                                                         </div>
-                                                    </div>
 
 
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-email">Institute Email</label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span class="input-group-text"><i
-                                                                    class="bx bx-envelope"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Institute Email" />
-                                                            <span id="basic-icon-default-email2"
-                                                                class="input-group-text">@example.com</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <h5 class="mb-0 mt-4 mb-4">Administer Details</h5>
-                                                <div class="col-lg-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Administer Name </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text">
-                                                                <i class="fa-solid fa-user"></i>
-                                                            </span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Administer Name" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Administer Position
-                                                        </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text">
-                                                                <i class="fa-solid fa-location"></i>
-                                                            </span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Administer Position" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-fullname">Administer Phone </label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-fullname2"
-                                                                class="input-group-text">
-                                                                <i class="fa-solid fa-phone"></i>
-                                                            </span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Administer Phone" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-email">Administer Email</label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span class="input-group-text"><i
-                                                                    class="bx bx-envelope"></i></span>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Administer Email" />
-                                                            <span id="basic-icon-default-email2"
-                                                                class="input-group-text">@example.com</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label"
-                                                            for="basic-icon-default-message">Institute
-                                                            Description</label>
-                                                        <div class="input-group input-group-merge">
-                                                            <span id="basic-icon-default-message2"
-                                                                class="input-group-text"><i
-                                                                    class="bx bx-comment"></i></span>
-                                                            <textarea id="basic-icon-default-message"
-                                                                class="form-control"
-                                                                placeholder="Institute Description"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <button type="submit" class="btn btn-primary">Send</button>
+                                                    </form>
                                                 </div>
                                             </div>
-
-
-                                        </form>
+                                        </div>
                                     </div>
+                                    <!-- /Account -->
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
                     <!-- / Content -->
                     <!-- Footer -->
                     <footer class="content-footer footer bg-footer-theme">
@@ -1050,6 +971,7 @@
 
     <!-- Page JS -->
     <script src="assets/js/dashboards-analytics.js"></script>
+    <script src="./assets/js/pages-account-settings-account.js"></script>
 
 </body>
 

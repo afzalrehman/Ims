@@ -36,3 +36,7 @@
         width: 100px
     }
 }
+
+.image{
+    filter: brightness(70%); 
+}
