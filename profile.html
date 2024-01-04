@@ -43,13 +43,13 @@
   <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
   <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
   <link rel="stylesheet" href="assets/css/demo.css" />
+  <link rel="stylesheet" href="assets/css/page-profile.css">
 
   <!-- Vendors CSS -->
   <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
   <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
   <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/page-profile.css">
 
   <!-- Page CSS -->
 
@@ -109,7 +109,7 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="All_institue.html" class="menu-link">
+                <a href="all_institue.html" class="menu-link">
                   <div data-i18n="All Institute">All Institute</div>
                 </a>
               </li>
@@ -130,12 +130,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="trade_add.html" class="menu-link">
                   <div data-i18n="Courses Add">Courses Add</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="all_Trade.html" class="menu-link">
                   <div data-i18n="Courses Details">Courses Details</div>
                 </a>
               </li>
@@ -171,12 +171,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="student_add.html" class="menu-link">
                   <div data-i18n="Student Addmission">Student Addmission</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="all_student.html" class="menu-link">
                   <div data-i18n="Student Details">Student Details</div>
                 </a>
               </li>
@@ -195,12 +195,12 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="attendance_add.html" class="menu-link">
                   <div data-i18n="Attendance Add">Attendance Add</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="attendance_details.html" class="menu-link">
                   <div data-i18n="Attendance Details">Attendance Details</div>
                 </a>
               </li>
@@ -233,12 +233,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="user-add.html" class="menu-link">
                   <div data-i18n="User Add">User Add</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="user_detail.html" class="menu-link">
                   <div data-i18n="User Details">User Details</div>
                 </a>
               </li>
@@ -250,6 +250,7 @@
 
 
       </aside>
+
       <!-- / Menu -->
       <!-- Layout container -->
       <div class="layout-page">
@@ -725,8 +726,7 @@
 
           <!-- Content -->
 
-
-          <div class="container-xxl flex-grow-1 ">
+          <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row">
               <div class="col-12">
                 <div class="card mb-4">
@@ -760,65 +760,207 @@
               </div>
             </div>
 
+            <div class="col-lg-8">
 
+              <!-- User Pills -->
+              <ul class="nav nav-pills flex-column flex-md-row">
+                <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i
+                      class="bx bx-user me-1"></i>Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="app-user-view-security.html"><i
+                      class="bx bx-lock-alt me-1"></i>Attendance</a></li>
+                <li class="nav-item"><a class="nav-link" href="app-user-view-billing.html"><i
+                      class="bx bx-detail me-1"></i>Fees</a></li>
+                <li class="nav-item"><a class="nav-link" href="app-user-view-notifications.html"><i
+                      class="bx bx-bell me-1"></i>Exam</a></li>
+              </ul>
+              <!--/ User Pills -->
+            </div>
           </div>
 
-          <div class="container-xxl flex-grow-1">
-            <div class="card">
-              <div class="container">
-                <h5 class="pb-2 border-bottom my-4">Details</h5>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="info-container">
-                      <ul class="list-unstyled">
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">Institute ID:</span>
-                          <span>2671727</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">User Name:</span>
-                          <span>Admin</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">Email:</span>
-                          <span>Abc@gmail.com</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">Number:</span>
-                          <span>(+92)3246739928</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">User Role:</span>
-                          <span>Management</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="info-container">
-                      <ul class="list-unstyled">
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">Institute Name:</span>
-                          <span>The Hunar Foundation</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">Institute Email:</span>
-                          <span>ABC@gmail.com</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">Institute Phone No:</span>
-                          <span>(+92)3245634789</span>
-                        </li>
-                        
-                      
-                      </ul>
+          <div class="container">
+            <div class="row">
+              <!-- User Sidebar -->
+              <div class="col-xl-12 col-lg-12 col-md-12 order-1 order-md-0">
+                <!-- User Card -->
+                <div class="card mb-4">
+                  <div class="card-body">
+
+                    <h5 class="pb-2 border-bottom mb-4  mt-4">Student Details</h5>
+                    <div class="container">
+                      <div class="row">
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 ">
+                          <div class="info-container">
+                            <ul class="list-unstyled">
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">ID</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>8965#</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">NAME</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>Faizan</span>
+                              </li>
+
+                              <li class="mb-4">
+                                <span class="fw-bold me-2 ">FATHER NAME</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>Matee Ur Rehmen </span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2 ">GENDER</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>Male</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="info-container">
+                            <ul class="list-unstyled">
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">EMAIL</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>abc@gmail.com</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">CNIC</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>31304-1410313-1</span>
+                              </li>
+
+                              <li class="mb-4">
+                                <span class="fw-bold me-2 ">PHONE NO </span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>(+92)3246745982</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2 ">PHONE NO 2</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>(+92)3246745982</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="info-container">
+                            <ul class="list-unstyled">
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">ADDRESS</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>korangi karachi</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">DATE OF BIRTH</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>17/3/2001</span>
+                              </li>
+
+                              <li class="mb-4">
+                                <span class="fw-bold me-2 ">QUALIFICATION </span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>inter</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2 ">Status</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span class="badge bg-label-success">Drop</span>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="container">
+            <div class="row">
+              <!-- User Sidebar -->
+              <div class="col-xl-12 col-lg-12 col-md-12 order-1 order-md-0">
+                <!-- User Card -->
+                <div class="card mb-4">
+                  <div class="card-body">
+
+                    <h5 class="pb-2 border-bottom mb-4  mt-4">Institute Details</h5>
+                    <div class="container">
+                      <div class="row">
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <div class="info-container">
+                            <ul class="list-unstyled">
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">NAME</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>The Hunar Foundation</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">Trade</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>Web Develement</span>
+                              </li>
+
+                              <li class="mb-4">
+                                <span class="fw-bold me-2 ">CITY </span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>karachi</span>
+                              </li>
+
+                             
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <div class="info-container">
+                            <ul class="list-unstyled">
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2 ">SHIFT</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>Moring</span>
+                              </li>
+
+                              <li class="mb-4 ">
+                                <span class="fw-bold me-2">QAB</span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>Web Develement</span>
+                              </li>
+
+                              <li class="mb-4">
+                                <span class="fw-bold me-2 ">MARKITING CHANNEL </span>
+                                <span class="fw-bold me-2">:</span>
+                                <span>karachi</span>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- </div> -->
           <!-- / Content -->
+
           <!-- Footer -->
           <footer class="content-footer footer bg-footer-theme">
             <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">

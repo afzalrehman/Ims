@@ -109,7 +109,7 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="All_institue.html" class="menu-link">
+                <a href="all_institue.html" class="menu-link">
                   <div data-i18n="All Institute">All Institute</div>
                 </a>
               </li>
@@ -130,12 +130,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="trade_add.html" class="menu-link">
                   <div data-i18n="Courses Add">Courses Add</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="all_Trade.html" class="menu-link">
                   <div data-i18n="Courses Details">Courses Details</div>
                 </a>
               </li>
@@ -171,12 +171,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="student_add.html" class="menu-link">
                   <div data-i18n="Student Addmission">Student Addmission</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="all_student.html" class="menu-link">
                   <div data-i18n="Student Details">Student Details</div>
                 </a>
               </li>
@@ -195,12 +195,12 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="attendance_add.html" class="menu-link">
                   <div data-i18n="Attendance Add">Attendance Add</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="attendance_details.html" class="menu-link">
                   <div data-i18n="Attendance Details">Attendance Details</div>
                 </a>
               </li>
@@ -233,12 +233,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="user-add.html" class="menu-link">
                   <div data-i18n="User Add">User Add</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="user_detail.html" class="menu-link">
                   <div data-i18n="User Details">User Details</div>
                 </a>
               </li>
@@ -725,38 +725,59 @@
 
           <!-- Content -->
 
-          <div class="container-xxl flex-grow-1 container-p-y">
+
+          <div class="container-xxl flex-grow-1 ">
             <div class="row">
-              <!-- User Sidebar -->
-              <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
-                <!-- User Card -->
-                <div class="card mb-4">
-                  <div class="card-body">
-                    <div class="user-avatar-section">
-                      <div class=" d-flex align-items-center flex-column">
-                        <img class="img-fluid rounded my-4" src="./assets/img/avatars/1.png" height="110"
-                          width="110" alt="User avatar" />
-                        <div class="user-info text-center">
-                          <h4 class="mb-2">Admin</h4>
-                          <span class="badge bg-label-secondary">Super Admin</span>
+              <div class="col-12">
+                <div class="card mb-4 mt-4">
+                  <div class="user-profile-header-banner">
+                    <img src="./assets/img/pages/profile-banner.png" alt="Banner image" class="rounded-top img-fluid">
+                  </div>
+                  <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-4">
+                    <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
+                      <img src="assets/img/avatars/1.png" alt="user image"
+                        class="d-block h-auto ms-0 ms-sm-4 rounded user-profile-img" width="20%">
+                    </div>
+                    <div class="flex-grow-1 mt-3 mt-sm-5 ">
+                      <div
+                        class="d-flex align-items-md-end align-items-sm-start align-items-center justify-content-md-between justify-content-start mx-4 flex-md-row flex-column gap-4">
+                        <div class="user-profile-info">
+                          <!-- <h4 class="fw-blod mb-4">Afzal</h4> -->
+                          <ul
+                            class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
+                            <li class="list-inline-item fs-5">
+                              <div class="user-info ">
+                                <h4 class="mb-2">Faizan Mati</h4>
+                                <span class="badge bg-label-secondary fw-bolder">Student</span>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                  
-                    <h5 class="pb-2 border-bottom my-4">Details</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="container-xxl flex-grow-1">
+            <div class="card">
+              <div class="container">
+                <h5 class="pb-2 border-bottom my-4">Details</h5>
+                <div class="row">
+                  <div class="col-lg-6">
                     <div class="info-container">
                       <ul class="list-unstyled">
                         <li class="mb-3">
-                          <span class="fw-bold me-2">ID:</span>
+                          <span class="fw-bold me-2">Institute ID:</span>
                           <span>2671727</span>
                         </li>
                         <li class="mb-3">
                           <span class="fw-bold me-2">User Name:</span>
                           <span>Admin</span>
-                        </li>
-                        <li class="mb-3">
-                          <span class="fw-bold me-2">User Role:</span>
-                          <span>Management</span>
                         </li>
                         <li class="mb-3">
                           <span class="fw-bold me-2">Email:</span>
@@ -766,155 +787,107 @@
                           <span class="fw-bold me-2">Number:</span>
                           <span>(+92)3246739928</span>
                         </li>
-                       
+                        <li class="mb-3">
+                          <span class="fw-bold me-2">User Role:</span>
+                          <span>Management</span>
+                        </li>
                       </ul>
-                   
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="info-container">
+                      <ul class="list-unstyled">
+                        <li class="mb-3">
+                          <span class="fw-bold me-2">Institute Name:</span>
+                          <span>The Hunar Foundation</span>
+                        </li>
+                        <li class="mb-3">
+                          <span class="fw-bold me-2">Institute Email:</span>
+                          <span>ABC@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                          <span class="fw-bold me-2">Institute Phone No:</span>
+                          <span>(+92)3245634789</span>
+                        </li>
+                        
+                      
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <!-- /User Card -->
-                
-              </div>
-            
-              <div class="col-xl-8 col-lg-7 col-md-7 order-1 order-md-0">
-                <!-- User Card -->
-                <div class="card mb-4">
-                  <div class="card-body">
-                    <form>
-                      <div class="row">
-                          <div class="col-lg-6">
-                              <div class="mb-3">
-                                  <label class="form-label" for="basic-icon-default-fullname">User
-                                      Name </label>
-                                  <div class="input-group input-group-merge">
-                                      <span id="basic-icon-default-fullname2"
-                                          class="input-group-text"></span>
-                                      <input type="text" class="form-control"
-                                          placeholder="User Name" />
-                                  </div>
-                              </div>
-                              <div class="mb-3">
-                                  <label class="form-label" for="basic-icon-default-phone">Phone
-                                      No</label>
-                                  <div class="input-group input-group-merge">
-                                      <span id="basic-icon-default-phone2"
-                                          class="input-group-text"></span>
-                                      <input type="number" class="form-control phone-mask"
-                                          placeholder="+923587998941" />
-                                  </div>
-                              </div>
-                             
-                          </div>
-                          <div class="col-lg-6">
-                              <div class="mb-3">
-                                  <label class="form-label" for="basic-icon-default-fullname">User
-                                      Email </label>
-                                  <div class="input-group input-group-merge">
-                                      <span id="basic-icon-default-fullname2"
-                                          class="input-group-text"></span>
-                                      <input type="text" class="form-control"
-                                          placeholder="Abcefgh" />
-                                      <span id="basic-icon-default-email2"
-                                          class="input-group-text">@example.com</span>
-                                  </div>
-                              </div>
-
-                              <div class="mb-3">
-                                  <label class="form-label"
-                                      for="basic-icon-default-email">User Role</label>
-                                  <div class="input-group input-group-merge">
-                                      <select name="" id="" class="form-control">
-                                          <option value="1">---</option>
-                                          <option value="1">Teacher</option>
-                                          <option value="1">Management</option>
-                                      </select>
-                                  </div>
-                              </div>
-
-                          </div>
-                          <div class="col-lg-6">
-                              <button type="submit" class="btn btn-primary">Update</button>
-                          </div>
-                      </div>
-
-
-                  </form> 
-                  </div>
-                </div>
-                <!-- /User Card -->
-                
               </div>
             </div>
-            <!-- / Content -->
-            <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div class="mb-2 mb-md-0">
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear())
-                  </script>
-                  , made with ❤️ by <a href="https://themeselection.com/" target="_blank"
-                    class="footer-link fw-bolder">ThemeSelection</a>
-                </div>
-                <div>
-
-                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-                  <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
-                    target="_blank" class="footer-link me-4">Documentation</a>
-
-
-                  <a href="https://themeselection.com/support/" target="_blank"
-                    class="footer-link d-none d-sm-inline-block">Support</a>
-
-                </div>
-              </div>
-            </footer>
-            <!-- / Footer -->
-
-
-            <div class="content-backdrop fade"></div>
           </div>
-          <!-- Content wrapper -->
+          <!-- / Content -->
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>
+                , made with ❤️ by <a href="https://themeselection.com/" target="_blank"
+                  class="footer-link fw-bolder">ThemeSelection</a>
+              </div>
+              <div>
+
+                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+
+                <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
+                  target="_blank" class="footer-link me-4">Documentation</a>
+
+
+                <a href="https://themeselection.com/support/" target="_blank"
+                  class="footer-link d-none d-sm-inline-block">Support</a>
+
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+
+          <div class="content-backdrop fade"></div>
         </div>
-        <!-- / Layout page -->
+        <!-- Content wrapper -->
       </div>
-
-
-
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
-
-
-      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-      <div class="drag-target"></div>
-
+      <!-- / Layout page -->
     </div>
-    <!-- / Layout wrapper -->
-    <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
-    <script src="assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="assets/vendor/libs/popper/popper.js"></script>
-    <script src="assets/vendor/js/bootstrap.js"></script>
-    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="assets/vendor/libs/hammer/hammer.js"></script>
-    <script src="assets/vendor/libs/i18n/i18n.js"></script>
-    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
-    <script src="assets/vendor/js/menu.js"></script>
-    <!-- endbuild -->
 
-    <!-- Vendors JS -->
-    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
 
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
 
-    <!-- Page JS -->
-    <script src="assets/js/dashboards-analytics.js"></script>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+
+  </div>
+  <!-- / Layout wrapper -->
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <script src="assets/vendor/libs/hammer/hammer.js"></script>
+  <script src="assets/vendor/libs/i18n/i18n.js"></script>
+  <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+  <script src="assets/vendor/js/menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="assets/js/dashboards-analytics.js"></script>
 
 </body>
 
