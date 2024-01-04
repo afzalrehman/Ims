@@ -25,10 +25,6 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
-        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
@@ -74,6 +70,7 @@
     <div class="layout-wrapper layout-content-navbar  ">
         <div class="layout-container">
             <!-- Menu -->
+
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo ">
                   <a href="index-2.html" class="app-brand-link">
@@ -107,14 +104,15 @@
                     </a>
         
                     <ul class="menu-sub">
-                      <li class="menu-item">
-                        <a href="all_institue.html" class="menu-link">
-                          <div data-i18n="All Institute">All Institute</div>
-                        </a>
-                      </li>
+        
                       <li class="menu-item">
                         <a href="institute-add.html" class="menu-link">
                           <div data-i18n="Institute Add">Institute Add</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="all_institue.html" class="menu-link">
+                          <div data-i18n="All Institute">All Institute</div>
                         </a>
                       </li>
         
@@ -135,7 +133,7 @@
                       </li>
                       <li class="menu-item">
                         <a href="all_Trade.html" class="menu-link">
-                          <div data-i18n="Courses Details">Courses Details</div>
+                          <div data-i18n="Courses Details">All Courses</div>
                         </a>
                       </li>
                     </ul>
@@ -149,13 +147,13 @@
         
                     <ul class="menu-sub">
                       <li class="menu-item">
-                        <a href="#" class="menu-link">
+                        <a href="teacher_add.html" class="menu-link">
                           <div data-i18n="Teacher Add">Teacher Add</div>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a href="#" class="menu-link">
-                          <div data-i18n="Teacher Details">Teacher Details</div>
+                        <a href="all_teacher.html" class="menu-link">
+                          <div data-i18n="Teacher Details">All Teacher</div>
                         </a>
                       </li>
                     </ul>
@@ -176,7 +174,7 @@
                       </li>
                       <li class="menu-item">
                         <a href="all_student.html" class="menu-link">
-                          <div data-i18n="Student Details">Student Details</div>
+                          <div data-i18n="Student Details">All Student</div>
                         </a>
                       </li>
                     </ul>
@@ -188,11 +186,6 @@
                     </a>
         
                     <ul class="menu-sub">
-                      <li class="menu-item">
-                        <a href="#" class="menu-link">
-                          <div data-i18n="Attendance Type">Attendance Type</div>
-                        </a>
-                      </li>
                       <li class="menu-item">
                         <a href="attendance_add.html" class="menu-link">
                           <div data-i18n="Attendance Add">Attendance Add</div>
@@ -238,7 +231,32 @@
                       </li>
                       <li class="menu-item">
                         <a href="user_detail.html" class="menu-link">
-                          <div data-i18n="User Details">User Details</div>
+                          <div data-i18n="User Details">All User</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                 
+                  <li class="menu-item">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                      <i class="menu-icon tf-icons las la-user"></i>
+                      <div data-i18n="User">Exam</div>
+                    </a>
+        
+                    <ul class="menu-sub">
+                      <li class="menu-item">
+                        <a href="exam-add.html" class="menu-link">
+                          <div data-i18n="User Add">Exam Add</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="exam_group.html" class="menu-link">
+                          <div data-i18n="User Details">Exam Group</div>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="exam_result.html" class="menu-link">
+                          <div data-i18n="User Details">Exam Result</div>
                         </a>
                       </li>
                     </ul>
@@ -252,6 +270,7 @@
             <!-- / Menu -->
             <!-- Layout container -->
             <div class="layout-page">
+
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
                     id="layout-navbar">
 
@@ -260,7 +279,11 @@
                             <i class="bx bx-menu bx-sm"></i>
                         </a>
                     </div>
+
+
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+
                         <!-- Search -->
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item navbar-search-wrapper mb-0">
@@ -768,297 +791,171 @@
 
 
                 </nav>
+
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <div class="card">
-                            <h5 class="card-header">All User</h5>
-                            <div class="table-responsive text-nowrap  table_higth">
-                                <table class="table table-hover text-center">
-                                    <thead class="table_body table_body">
-                                        <tr>
-                                            <th>#</th>
-                                            <th>User Name</th>
-                                            <th>User Role</th>
-                                            <th>Email</th>
-                                            <th>Number</th>
-                                            <th>Actions</th>
-                                            <!-- <th>Total</th>
-                                      <th>Status</th> -->
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-border-bottom-0">
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card mb-4">
+                                    <div class="card-header  d-flex justify-content-between align-items-center">
+                                        <div class="col-lg-12">
+                                            <h3 class="mb-0 mb-3">New Teacher Form</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start align-items-sm-center gap-4">
+                                            <img src="assets/img/pic/profile pic.webp" alt="user-avatar"
+                                                class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
+                                            <div class="button-wrapper">
+                                                <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                                                    <span class="d-none d-sm-block">Upload new photo</span>
+                                                    <i class="bx bx-upload d-block d-sm-none"></i>
+                                                    <input type="file" id="upload" class="account-file-input" hidden
+                                                        accept="image/png, image/jpeg" />
+                                                </label>
+                                                <button type="button"
+                                                    class="btn btn-label-secondary account-image-reset mb-4">
+                                                    <i class="bx bx-reset d-block d-sm-none"></i>
+                                                    <span class="d-none d-sm-block">Reset</span>
+                                                </button>
 
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
+                                                <p class="text-muted mb-0">Upload Student Image</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-0">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-fullname">Institute ID </label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Institute ID" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-company">Teacher Name</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Teacher Name" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="basic-icon-default-company">Date
+                                                            Of Birth</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="date" class="form-control"
+                                                                placeholder="Date Of Birth" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-company">CNIC</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="CNIC" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-company">Teacher Address</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Teacher Address" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="basic-icon-default-phone">Phone
+                                                            No</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control phone-mask"
+                                                                placeholder="+923587998941" />
+                                                        </div>
+                                                    </div>
+
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
 
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
+
+
+
+                                                <div class="col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-fullname">Institute Name </label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Institute Name" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-fullname">Teacher Father Name
+                                                        </label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Teacher Father Name" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-fullname">Gender</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="1">---</option>
+                                                                <option value="1">Male</option>
+                                                                <option value="1">Fe Mail</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-company">Qualification</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Qualification" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-company">Course</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Course" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label"
+                                                            for="basic-icon-default-email">Email</label>
+                                                        <div class="input-group input-group-merge">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Email" />
+                                                            <span id="basic-icon-default-email2"
+                                                                class="input-group-text">@example.com</span>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
 
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
+                                                <div class="col-lg-6">
+                                                    <button type="submit" class="btn btn-primary">Send</button>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-                                            <td>Afzal</td>
-                                            <td><span class=" me-1">Management</span></td>
-                                            <td><span class=" me-1">Abc@gmail.com</span></td>
-                                            <td><span class=" me-1">(+92)324563789</span></td>
-                                            <td>
-                                                <div>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
-                                                    </a>
-
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
-                                                    </a>
-                                                    <a href="#">
-                                                        <span><i
-                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                            </div>
 
 
-
-                                    </tbody>
-                                </table>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1106,8 +1003,6 @@
 
         <!-- Overlay -->
         <div class="layout-overlay layout-menu-toggle"></div>
-
-
         <!-- Drag Target Area To SlideIn Menu On Small Screens -->
         <div class="drag-target"></div>
 
@@ -1135,6 +1030,7 @@
 
     <!-- Page JS -->
     <script src="assets/js/dashboards-analytics.js"></script>
+    <script src="./assets/js/pages-account-settings-account.js"></script>
 
 </body>
 
