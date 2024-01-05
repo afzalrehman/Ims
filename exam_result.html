@@ -796,29 +796,26 @@
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <div class="card mb-3 p-3">
                             <div class="row ">
-                                <div class="col-lg-3 pt-3">
+                                <div class="col-lg-4 pt-3">
                                     <select name="" id="" class="form-control">
-                                        <option value="1">All Institute</option>
-                                        <option value="1">Institute</option>
-                                        <option value="1">Institute</option>
+                                        <option value="1">Exam Group</option>
+                                        <option value="1">Abc</option>
+                                        <option value="1">Abc</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-3 pt-3">
+                                <div class="col-lg-4 pt-3">
                                     <select name="" id="" class="form-control">
                                         <option value="1">Shift Select</option>
-                                        <option value="1">Shift</option>
-                                        <option value="1">Shift</option>
+                                        <option value="1">Morning</option>
+                                        <option value="1">Evening</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-3 pt-3">
+                                <div class="col-lg-4 pt-3">
                                     <select name="" id="" class="form-control">
                                         <option value="1">Trade Select</option>
                                         <option value="1">Trade</option>
                                         <option value="1">Trade</option>
                                     </select>
-                                </div>
-                                <div class="col-lg-3 pt-3">
-                                    <input type="date" class="form-control">
                                 </div>
                                 <div class="col-lg-12 pt-3">
                                     <button type="submit" class="btn btn-primary">Search</button>
@@ -826,175 +823,83 @@
                             </div>
                         </div>
                         <div class="card">
-                            <h5 class="card-header">Student List</h5>
-                            <div class="row mb-3 px-3 d-flex align-items-center">
-                                <div class="col-lg-9">
-                                    <span class="p-2">Set attendance for all students as</span>
-                                    <label for="" class="px-1">
-                                        <input type="radio" name="name" id="" class="form-check-input ">
-                                        Presents
-                                    </label>
-                                    <label for=""class="px-1">
-                                        <input type="radio" name="name" id="" class="form-check-input ">
-                                        Absents
-                                    </label>
-                                    <label for=""class="px-1">
-                                        <input type="radio" name="name" id="" class="form-check-input ">
-                                        Leaves
-                                    </label>
+                            <div class="row">
+                                <div class="col-7 col-lg-10 col-md-10 col-sm-8">
+                                    <h5 class="card-header">All Result</h5>
                                 </div>
-
-                                <div class="col-lg-3 text-end">
-                                    <button type="submit" class="btn btn-primary">Save</button>
+                                <!-- <div class="col-3"></div> -->
+                                <div class="col-4 col-lg-2 col-md-2 col-sm-4">
+                                    <Select class="mt-3 mb-4 select_all_std"  >
+                                        <option value="">Export</option>
+                                        <button type="submit">
+                                            <option value="">Pirnt</option>
+                                        </button>
+                                        <button type="submit">
+                                            <option value="">Excel</option>
+                                        </button>
+                                        <button type="submit">
+                                            <option value="">CSV</option>
+                                        </button>
+                                    </Select>
                                 </div>
                             </div>
                             <div class="table-responsive text-nowrap  table_higth">
-                                <table class="table table-hover text-center">
+                                <table class="table table-hover">
                                     <thead class="table_body table_body">
                                         <tr>
                                             <th>#</th>
+                                            <th>Image</th>
                                             <th>ID</th>
                                             <th>name</th>
-                                            <th>Presents</th>
-                                            <th>Absents</th>
-                                            <th>Leaves</th>
-                                            <th>Note</th>
+                                            <th>Date</th>
+                                            <th>Day</th>
+                                            <th>Student Marks</th>
+                                            <th>Total Marks</th>
+                                            <th>percentage</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-0">
                                         <tr>
                                             <td></i> <strong>1</strong></td>
-
+                                            <td>
+                                                <ul
+                                                    class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                                    <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
+                                                        data-bs-placement="top" class="avatar avatar-xs pull-up"
+                                                        title="Muhammad Afzal">
+                                                        <img src="assets/img/pic/afzal.png" alt="Avatar"
+                                                            class="rounded-circle">
+                                                    </li>
+                                                </ul>
+                                            </td>
                                             <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
+                                            <td><span class=" me-1">Faizan</span></td>
+                                            <td><span class=" me-1">12-Feb-2023</span></td>
+                                            <td><span class=" me-1">Monday</span></td>
+                                            <td><span class=" me-1">70</span></td>
+                                            <td><span class=" me-1">100</span></td>
+                                            <td><span class=" me-1">70%</span></td>
                                             <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
+                                                <div>
+                                                    <a href="#">
+                                                        <span><i
+                                                                class="fs-5 las la-eye bg-success text-white p-1 rounded-2"></i></span>
+                                                    </a>
 
+                                                    <a href="#">
+                                                        <span><i
+                                                                class="fs-5 las la-pen bg-primary text-white p-1 rounded-2 "></i></span>
+                                                    </a>
+                                                    <a href="#">
+                                                        <span><i
+                                                                class="fs-5 las la-trash-alt bg-danger text-white p-1 rounded-2"></i></span>
+                                                    </a>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-
-                                            <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-
-                                            <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-
-                                            <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-
-                                            <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-
-                                            <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td></i> <strong>1</strong></td>
-
-                                            <td><span class=" me-1">000333</span></td>
-                                            <td>Muhammad Afzal</td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="radio" name="name" id="" class="form-check-input ">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control">
-                                            </td>
-
-                                        </tr>
+                                       
+                                       
                                     </tbody>
                                 </table>
                             </div>

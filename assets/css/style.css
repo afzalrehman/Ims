@@ -25,6 +25,9 @@
     background-color: #b8b8b8;
     /* Set the color of the thumb on hover */
 }
+
+
+
 /* =================index page table higth style And================ */
 
 .table_higth {
@@ -105,6 +108,71 @@
     border-radius: 8px;
 }
 
-.btn_search{
+.btn_search {
     margin-right: 20px;
+}
+
+.light-style .authentication-wrapper .authentication-bg {
+    background-color: #fff;
+    height: 100vh;
+    
+}
+
+/* ====================exam Type Page ==================== */
+.table_exam_higth {
+    height: 310px;
+    overflow: auto;
+}
+
+.table_exam_higth::-webkit-scrollbar {
+    width: 4px;
+    /* Set the width of the scrollbar */
+}
+
+.table_exam_higth::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Set the color of the track */
+}
+
+.table_exam_higth::-webkit-scrollbar-thumb {
+    background-color: #cacaca;
+    /* Set the color of the thumb */
+    border-radius: 6px;
+    /* Set the radius of the thumb */
+}
+
+.table_exam_higth::-webkit-scrollbar-thumb:hover {
+    background-color: #b8b8b8;
+    /* Set the color of the thumb on hover */
+}
+
+
+
+
+/* ====================Table Add Exam Hight Page ==================== */
+.table_add_exam_higth {
+    height: 480px;
+    overflow: auto;
+}
+
+.table_add_exam_higth::-webkit-scrollbar {
+    width: 4px;
+    /* Set the width of the scrollbar */
+}
+
+.table_add_exam_higth::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Set the color of the track */
+}
+
+.table_add_exam_higth::-webkit-scrollbar-thumb {
+    background-color: #cacaca;
+    /* Set the color of the thumb */
+    border-radius: 6px;
+    /* Set the radius of the thumb */
+}
+
+.table_add_exam_higth::-webkit-scrollbar-thumb:hover {
+    background-color: #b8b8b8;
+    /* Set the color of the thumb on hover */
 }
