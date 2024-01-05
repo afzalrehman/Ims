@@ -9,6 +9,21 @@
     margin-top: -2rem
 }
 
+title{
+    display: none;
+}
+@media print {
+    /* Hide the title, URL, and date in the header */
+    header, header * {
+      display: none !important;
+    }
+  
+    /* Hide the title, URL, and date in the footer */
+    footer, footer * {
+      display: none !important;
+    }
+  }
+  
 .user-profile-header .user-profile-img {
     border: 5px solid;
     width: 120px
